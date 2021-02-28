@@ -65,9 +65,7 @@ Statyczna biblioteka cjose.
 Summary:	API documentation for cjose library
 Summary(pl.UTF-8):	Dokumentacja API biblioteki cjose
 Group:		Documentation
-%if "%{_rpmversion}" >= "4.6"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API documentation for cjose library.
