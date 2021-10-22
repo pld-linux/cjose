@@ -1,0 +1,8 @@
+--- cjose-0.6.1/src/Makefile.am~	2018-04-12 00:39:58.000000000 +0200
++++ cjose-0.6.1/src/Makefile.am	2021-10-22 22:29:22.996058335 +0200
+@@ -1,4 +1,4 @@
+-AM_CFLAGS =-std=gnu99 --pedantic -Wall -Werror -g -O2 -I$(top_builddir)/include
++AM_CFLAGS =-std=gnu99 --pedantic -Wall -g -O2 -I$(top_builddir)/include
+ 
+ lib_LTLIBRARIES=libcjose.la
+ libcjose_la_CPPFLAGS= -I$(topdir)/include

@@ -7,12 +7,13 @@ Summary:	JOSE implementation for C
 Summary(pl.UTF-8):	Implementacja JOSE dla C
 Name:		cjose
 Version:	0.6.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/cisco/cjose/releases
 Source0:	https://github.com/cisco/cjose/archive/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	7618e839ea0ecfa38355fa7f58391f88
+Patch0:		openssl3.patch
 URL:		https://github.com/cisco/cjose
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.14
@@ -75,6 +76,7 @@ Dokumentacja API biblioteki cjose.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__libtoolize}
